@@ -48,8 +48,8 @@ class Horse(Enum):
     SPECIAL_WEEK_SUMMER = ('Special Week (Summer)', '#FFD5F9', '#FFBC6E') # Eye, Outfit
     MEISHO_DOTO = ('Meisho Doto', '#5A5EDE', '#C568AA') # Outfit, Eye
 
-    def __init__(self, name, main_color, sub_color):
-        self.name = name
+    def __init__(self, display_name, main_color, sub_color):
+        self.display_name = display_name
         self.main_color = main_color
         self.sub_color = sub_color
 
@@ -60,6 +60,6 @@ class RunnerType(Enum):
     LATE_SURGER = ('Late Surger', '#F68E5F')
     END_CLOSER = ('End Closer', '#F76C5E')
 
-    def __init__(self, name, main_color):
-        self.name = name
+    def __init__(self, style, main_color):
+        self.style = style
         self.main_color = main_color
